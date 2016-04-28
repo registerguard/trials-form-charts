@@ -1,0 +1,112 @@
+begin
+<hr>
+{% for event in events %}
+	
+	<h1>{{ event.event }}</h1>
+	<img src="{{ event.image_url }}">
+	<p>{{ event.image_caption }} : {{ event.image_credit }}</p>
+	<h2>{{ event.final }}</h2>
+	<h3>Records</h3>
+	<ul>
+		<li>World: {{ event.world }}</li>
+		<li>U.S.: {{ event.us }}</li>
+		<li>Meet: {{ event.meet }}</li>
+		<li>Hayward Field: {{ event.hayward }}</li>
+		<li>Olympic 'A' standard: {{ event.olympic_a }}</li>
+		<li>Olympic 'B' standard: {{ event.olympic_b }}</li>
+	</ul>
+	
+	<h3>Analysis</h3>
+	<p>{{ event.analysis }}</p>
+	
+	<h3>Form chart</h3>
+	<table>
+		<tr>
+			<th>Name</th>
+			<th>Age</th>
+			<th>Residence</th>
+			<th>PR</th>
+		</tr>
+		{# would love to loop this but how? {{ event.name{{ i }} }} ??? #}
+		<tr>
+			<td>{{ event.name_1 }}</td>
+			<td>{{ event.age_1 }}</td>
+			<td>{{ event.residence_1 }}</td>
+			<td>{{ event.pr_1 }}</td>
+		</tr>
+		<tr>
+			<td>{{ event.notes_1 }}</td>
+		</tr>
+		<tr>
+			<td>{{ event.name_2 }}</td>
+			<td>{{ event.age_2 }}</td>
+			<td>{{ event.residence_2 }}</td>
+			<td>{{ event.pr_2 }}</td>
+		</tr>
+		<tr>
+			<td>{{ event.notes_2 }}</td>
+		</tr>
+		<tr>
+			<td>{{ event.name_3 }}</td>
+			<td>{{ event.age_3 }}</td>
+			<td>{{ event.residence_3 }}</td>
+			<td>{{ event.pr_3 }}</td>
+		</tr>
+		<tr>
+			<td>{{ event.notes_3 }}</td>
+		</tr>
+		<tr>
+			<td>{{ event.name_4 }}</td>
+			<td>{{ event.age_4 }}</td>
+			<td>{{ event.residence_4 }}</td>
+			<td>{{ event.pr_4 }}</td>
+		</tr>
+		<tr>
+			<td>{{ event.notes_4 }}</td>
+		</tr>
+		<tr>
+			<td>{{ event.name_5 }}</td>
+			<td>{{ event.age_5 }}</td>
+			<td>{{ event.residence_5 }}</td>
+			<td>{{ event.pr_5 }}</td>
+		</tr>
+		<tr>
+			<td>{{ event.notes_5 }}</td>
+		</tr>
+		<tr>
+			<td>{{ event.name_6 }}</td>
+			<td>{{ event.age_6 }}</td>
+			<td>{{ event.residence_6 }}</td>
+			<td>{{ event.pr_6 }}</td>
+		</tr>
+		<tr>
+			<td>{{ event.notes_6 }}</td>
+		</tr>
+		<tr>
+			<td>{{ event.name_7 }}</td>
+			<td>{{ event.age_7 }}</td>
+			<td>{{ event.residence_7 }}</td>
+			<td>{{ event.pr_7 }}</td>
+		</tr>
+		<tr>
+			<td>{{ event.notes_7 }}</td>
+		</tr>
+		<tr>
+			<td>{{ event.name_8 }}</td>
+			<td>{{ event.age_8 }}</td>
+			<td>{{ event.residence_8 }}</td>
+			<td>{{ event.pr_8 }}</td>
+		</tr>
+		<tr>
+			<td>{{ event.notes_8 }}</td>
+		</tr>
+		
+	</table>
+	
+	<p>Also: {{ event.also }}</p>
+	
+	<p>{{ event.credit }}</p>
+	
+{% endfor %}
+<hr>
+end
